@@ -1,0 +1,11 @@
+template(name="test")
+    h1 Hello
+    +autoForm id="usersForm" type="insert" collection=Meteor.users
+        .form-group-attached
+            .row.clearfix
+                .col-sm-4.col-sm-offset-3
+                    .form-group.form-group-default
+                        label Email
+                        +afFieldInput name="Email" id="Email" type="text" placeholder="Enter email ..." class="form-control"
+                .col-sm-4
+                    button.save-button.pull-right.btn.btn-success(type='submit') Save
